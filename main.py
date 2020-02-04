@@ -28,24 +28,24 @@ Xdata_usaquen = completar(Xdata_usaquen)
 
 median_suba = Xdata_suba["precio"].median()
 median_barrios_unidos = Xdata_barrios_unidos["precio"].median()
-median_suba = Xdata_suba["precio"].median()
-median_suba = Xdata_suba["precio"].median()
-median_suba = Xdata_suba["precio"].median()
-median_suba = Xdata_suba["precio"].median()
+median_bosa = Xdata_bosa["precio"].median()
+median_engativa = Xdata_engativa["precio"].median()
+median_teusaquillo = Xdata_teusaquillo["precio"].median()
+median_usaquen = Xdata_usaquen["precio"].median()
 
 min_suba = Xdata_suba["precio"].min()
 min_barrios_unidos = Xdata_barrios_unidos["precio"].median()
-min_suba = Xdata_suba["precio"].min()
-min_suba = Xdata_suba["precio"].min()
-min_suba = Xdata_suba["precio"].min()
-min_suba = Xdata_suba["precio"].min()
+min_bosa = Xdata_bosa["precio"].min()
+min_engativa = Xdata_engativa["precio"].min()
+min_teusaquillo = Xdata_teusaquillo["precio"].min()
+min_usaquen = Xdata_usaquen["precio"].min()
 
 max_suba = Xdata_suba["precio"].max()
 max_barrios_unidos = Xdata_barrios_unidos["precio"].max()
-max_suba = Xdata_suba["precio"].max()
-max_suba = Xdata_suba["precio"].max()
-max_suba = Xdata_suba["precio"].max()
-max_suba = Xdata_suba["precio"].max()
+max_bosa = Xdata_bosa["precio"].max()
+max_engativa = Xdata_engativa["precio"].max()
+max_teusaquillo = Xdata_teusaquillo["precio"].max()
+max_usaquen = Xdata_usaquen["precio"].max()
 
 Ingresos = int(input("Ingrese sus ingresos mensuales: "))
 
@@ -73,3 +73,23 @@ Mercado = int(input("Ingrese su presupuesto para mercado: "))
 Entretenimiento = int(input("Ingrese su presupuesto para entretenimiento (Salidas/Comidas/Cine/Fiestas/etc): "))
 
 Arriendo = Ingresos - (Transporte + Mercado + Entretenimiento)
+
+print("Según tus ingresos y gastos mensuales, puedes vivir en las siguientes localidades: ")
+
+if Arriendo > min_barrios_unidos and Arriendo < max_barrios_unidos:
+    print("Barrios unidos")
+
+if Arriendo > min_suba and Arriendo < max_suba:
+    print("Suba")
+
+if Arriendo > min_bosa and Arriendo < max_bosa:
+    print("Bosa")
+
+if Arriendo > min_engativa and Arriendo < max_engativa:
+    print("Engativa")
+
+if Arriendo > min_teusaquillo and Arriendo < max_teusaquillo:
+    print("Teusaquillo")
+
+if Arriendo > min_usaquen and Arriendo < max_usaquen:
+    print("Usaquen")

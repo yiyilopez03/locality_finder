@@ -13,7 +13,7 @@ def transporte(answer_transporte, workdays, tm, precio_transporte):
 def completar (X):
     from sklearn.impute import SimpleImputer
     Xi = X.copy()
-    imputer_num = SimpleImputer(strategy = "most_frequent")
+    imputer_num = SimpleImputer(strategy = "median")
     a = Xi.columns[np.sum(Xi.isna())> 0]
     imputer_num.fit(Xi[a])
     Xi[a] = imputer_num.transform(Xi[a])
