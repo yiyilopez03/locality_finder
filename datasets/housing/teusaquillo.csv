@@ -1,51 +1,51 @@
-"localidad","barrio","precio","habitaciones","area (m2)"
-"teusaquillo","las americas","1100000","1","36"
-"teusaquillo","centro administrativo occidente","1800000","3","90"
-"teusaquillo","samper","2200000","2","67.42"
-"teusaquillo","las americas","1100000","1","22"
-"teusaquillo","armenia","1300000","1","35"
-"teusaquillo","ciudad salitre","3100000","3","92"
-"teusaquillo","armenia","650000","1","25"
-"teusaquillo","teusaquillo","1400000","1","63"
-"teusaquillo","la soledad","3200000","2","104"
-"teusaquillo","sucre","1200000","1","40"
-"teusaquillo","la magdalena","1600000","1","52"
-"teusaquillo","el recuerdo","800000","1","20"
-"teusaquillo","sucre","1000000","1","28"
-"teusaquillo","las americas","1000000","1","20"
-"teusaquillo","el salitre","1900000","3","90"
-"teusaquillo","ciudad salitre","3000000","2","87"
-"teusaquillo","ciudad salitre","2500000","3","84"
-"teusaquillo","teusaquillo","1650000","1","65"
-"teusaquillo","teusaquillo","1600000","1","45"
-"teusaquillo","quintaparedes","2400000","1","107"
-"teusaquillo","teusaquillo","980000","1","30"
-"teusaquillo","santa fe","2000000","3","92"
-"teusaquillo","armenia","33500010","1","80"
-"teusaquillo","santa fe","2130000","2","64"
-"teusaquillo","ciudad salitre","2300000","3","64"
-"teusaquillo","la soledad ","4636000","3","178"
-"teusaquillo","la soledad","1520000","1","50"
-"teusaquillo","quesada","1900000","3","80"
-"teusaquillo","teusaquillo","1200000","1","50"
-"teusaquillo","el salitre","1800000","3","90"
-"teusaquillo","teusaquillo","1640000","1","40"
-"teusaquillo","gran america","1080000","1","21"
-"teusaquillo","las americas","1300000","1","40"
-"teusaquillo","quintaparedes","1400000","3","54"
-"teusaquillo","el recuerdo","1389000","2","68"
-"teusaquillo","san luis","2280000","2","80"
-"teusaquillo","la soledad","1500000","2","78"
-"teusaquillo","teusaquillo","1800000","1","44"
-"teusaquillo","la esperanza norte","6200000","4","198"
-"teusaquillo","el recuerdo","1200000","2","30"
-"teusaquillo","sucre","1500000","1","78"
-"teusaquillo","teusaquillo","2700000","2","56"
-"teusaquillo","la esmeralda","1400000","1","25"
-"teusaquillo","teusaquillo","1650000","2","80"
-"teusaquillo","alfonso lopez","1471000","2","60"
-"teusaquillo","sagrado corazon","1500000","1","46"
-"teusaquillo","las americas","1600000","3","110"
-"teusaquillo","quesada","815000","1","50"
-"teusaquillo","el recuerdo","2600000","3","140"
-"teusaquillo","la magdalena","7000000","1","300"
+localidad;barrio;precio;habitaciones;area (m2)
+teusaquillo;las americas;1100000;1;36
+teusaquillo;centro administrativo occidente;1800000;3;90
+teusaquillo;samper;2200000;2;67.42
+teusaquillo;las americas;1100000;1;22
+teusaquillo;armenia;1300000;1;35
+teusaquillo;ciudad salitre;3100000;3;92
+teusaquillo;armenia;650000;1;25
+teusaquillo;teusaquillo;1400000;1;63
+teusaquillo;la soledad;3200000;2;104
+teusaquillo;sucre;1200000;1;40
+teusaquillo;la magdalena;1600000;1;52
+teusaquillo;el recuerdo;800000;1;20
+teusaquillo;sucre;1000000;1;28
+teusaquillo;las americas;1000000;1;20
+teusaquillo;el salitre;1900000;3;90
+teusaquillo;ciudad salitre;3000000;2;87
+teusaquillo;ciudad salitre;2500000;3;84
+teusaquillo;teusaquillo;1650000;1;65
+teusaquillo;teusaquillo;1600000;1;45
+teusaquillo;quintaparedes;2400000;1;107
+teusaquillo;teusaquillo;980000;1;30
+teusaquillo;santa fe;2000000;3;92
+teusaquillo;armenia;33500010;1;80
+teusaquillo;santa fe;2130000;2;64
+teusaquillo;ciudad salitre;2300000;3;64
+teusaquillo;la soledad ;4636000;3;178
+teusaquillo;la soledad;1520000;1;50
+teusaquillo;quesada;1900000;3;80
+teusaquillo;teusaquillo;1200000;1;50
+teusaquillo;el salitre;1800000;3;90
+teusaquillo;teusaquillo;1640000;1;40
+teusaquillo;gran america;1080000;1;21
+teusaquillo;las americas;1300000;1;40
+teusaquillo;quintaparedes;1400000;3;54
+teusaquillo;el recuerdo;1389000;2;68
+teusaquillo;san luis;2280000;2;80
+teusaquillo;la soledad;1500000;2;78
+teusaquillo;teusaquillo;1800000;1;44
+teusaquillo;la esperanza norte;6200000;4;198
+teusaquillo;el recuerdo;1200000;2;30
+teusaquillo;sucre;1500000;1;78
+teusaquillo;teusaquillo;2700000;2;56
+teusaquillo;la esmeralda;1400000;1;25
+teusaquillo;teusaquillo;1650000;2;80
+teusaquillo;alfonso lopez;1471000;2;60
+teusaquillo;sagrado corazon;1500000;1;46
+teusaquillo;las americas;1600000;3;110
+teusaquillo;quesada;815000;1;50
+teusaquillo;el recuerdo;2600000;3;140
+teusaquillo;la magdalena;7000000;1;300
