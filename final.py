@@ -1,52 +1,67 @@
 import numpy as np
 import pandas as pd
 import tkinter as tk
-from funciones import transporte, completar
+from funciones import transporte, precio
 
-csv_path = 'datasets/housing/housing.csv'
-csv_suba = 'datasets/housing/suba.csv'
-csv_barrios_unidos = 'datasets/housing/barrios_unidos.csv'
-csv_bosa = 'datasets/housing/bosa.csv' 
-csv_engativa = 'datasets/housing/engativa.csv'
-csv_teusaquillo = 'datasets/housing/teusaquillo.csv'
-csv_usaquen = 'datasets/housing/usaquen.csv'
+Xdata_suba = pd.read_excel('datasets/housing/suba.xlsx', header = 0)
+Xdata_barrios_unidos = pd.read_excel('datasets/housing/barrios_unidos.xlsx', header = 0)
+Xdata_bosa = pd.read_excel('datasets/housing/bosa.xlsx', header = 0)
+Xdata_engativa = pd.read_excel('datasets/housing/engativa.xlsx', header = 0)
+Xdata_teusaquillo = pd.read_excel('datasets/housing/teusaquillo.xlsx', header = 0)
+Xdata_usaquen = pd.read_excel('datasets/housing/usaquen.xlsx', header = 0)
+Xdata_fontibon = pd.read_excel('datasets/housing/fontibon.xlsx', header = 0)
+Xdata_kennedy = pd.read_excel('datasets/housing/kennedy.xlsx', header = 0)
+Xdata_puente_aranda = pd.read_excel('datasets/housing/puente_aranda.xlsx', header = 0)
+Xdata_san_cristobal = pd.read_excel('datasets/housing/san_cristobal.xlsx', header = 0)
+Xdata_santa_fe = pd.read_excel('datasets/housing/santa_fe.xlsx', header = 0)
 
-Xdata = pd.read_csv(csv_path)
-Xdata_suba = pd.read_csv(csv_suba)
-Xdata_barrios_unidos = pd.read_csv(csv_barrios_unidos)
-Xdata_bosa = pd.read_csv(csv_bosa)
-Xdata_engativa = pd.read_csv(csv_engativa)
-Xdata_teusaquillo = pd.read_csv(csv_teusaquillo)
-Xdata_usaquen = pd.read_csv(csv_usaquen)
+precio_suba = (precio(Xdata_suba))
+precio_barrios_unidos = precio(Xdata_barrios_unidos)
+precio_bosa = precio(Xdata_bosa)
+precio_engativa = precio(Xdata_engativa)
+precio_teusaquillo = precio(Xdata_teusaquillo)
+precio_usaquen = precio(Xdata_usaquen)
+precio_fontibon = precio(Xdata_fontibon)
+precio_kennedy = precio(Xdata_kennedy)
+precio_puente_aranda = precio(Xdata_puente_aranda)
+precio_san_cristobal = precio(Xdata_san_cristobal)
+precio_santa_fe = precio(Xdata_santa_fe)
 
-#Completar faltantes
-Xdata_suba = completar(Xdata_suba)
-Xdata_barrios_unidos = completar(Xdata_barrios_unidos)
-Xdata_bosa = completar(Xdata_bosa)
-Xdata_engativa = completar(Xdata_engativa)
-Xdata_teusaquillo = completar(Xdata_teusaquillo)
-Xdata_usaquen = completar(Xdata_usaquen)
+mean_suba = precio_suba.mean()
+mean_barrios_unidos = precio_barrios_unidos.mean()
+mean_bosa = precio_bosa.mean()
+mean_engativa = precio_bosa.mean()
+mean_teusaquillo = precio_teusaquillo.mean()
+mean_usaquen = precio_usaquen.mean()
+mean_fontibon = precio_fontibon.mean()
+mean_kennedy = precio_kennedy.mean()
+mean_puente_aranda = precio_puente_aranda.mean()
+mean_san_cristobal = precio_san_cristobal.mean()
+mean_santa_fe = precio_santa_fe.mean()
 
-median_suba = Xdata_suba["precio"].median()
-median_barrios_unidos = Xdata_barrios_unidos["precio"].median()
-median_bosa = Xdata_bosa["precio"].median()
-median_engativa = Xdata_engativa["precio"].median()
-median_teusaquillo = Xdata_teusaquillo["precio"].median()
-median_usaquen = Xdata_usaquen["precio"].median()
+min_suba = precio_suba.min()
+min_barrios_unidos = precio_barrios_unidos.min()
+min_bosa = precio_bosa.min()
+min_engativa = precio_bosa.min()
+min_teusaquillo = precio_teusaquillo.min()
+min_usaquen = precio_usaquen.min()
+min_fontibon = precio_fontibon.min()
+min_kennedy = precio_kennedy.min()
+min_puente_aranda = precio_puente_aranda.min()
+min_san_cristobal = precio_san_cristobal.min()
+min_santa_fe = precio_santa_fe.min()
 
-min_suba = Xdata_suba["precio"].min()
-min_barrios_unidos = Xdata_barrios_unidos["precio"].median()
-min_bosa = Xdata_bosa["precio"].min()
-min_engativa = Xdata_engativa["precio"].min()
-min_teusaquillo = Xdata_teusaquillo["precio"].min()
-min_usaquen = Xdata_usaquen["precio"].min()
-
-max_suba = Xdata_suba["precio"].max()
-max_barrios_unidos = Xdata_barrios_unidos["precio"].max()
-max_bosa = Xdata_bosa["precio"].max()
-max_engativa = Xdata_engativa["precio"].max()
-max_teusaquillo = Xdata_teusaquillo["precio"].max()
-max_usaquen = Xdata_usaquen["precio"].max()
+max_suba = precio_suba.max()
+max_barrios_unidos = precio_barrios_unidos.max()
+max_bosa = precio_bosa.max()
+max_engativa = precio_bosa.max()
+max_teusaquillo = precio_teusaquillo.max()
+max_usaquen = precio_usaquen.max()
+max_fontibon = precio_fontibon.max()
+max_kennedy = precio_kennedy.max()
+max_puente_aranda = precio_puente_aranda.max()
+max_san_cristobal = precio_san_cristobal.max()
+max_santa_fe = precio_santa_fe.max()
 
 def operaciones():
     ingresos_data = int(Ingresos.get())
@@ -78,7 +93,7 @@ def operaciones():
     arriendo_label = tk.Label(text = total_arriendo)
     arriendo_label.place(x = 22, y = 560)
 
-    mensaje_label = tk.Label(Text = "Según tus ingresos y gastos mensuales, puedes vivir en las siguientes localidades: ")
+    mensaje_label = tk.Label(text = "Según tus ingresos y gastos mensuales, puedes vivir en las siguientes localidades: ")
     mensaje_label.place(x = 22, y = 580)
 
     barrios_unidos = ""
@@ -87,9 +102,14 @@ def operaciones():
     engativa = ""
     teusaquillo = ""
     usaquen = ""
+    fontibon = ""
+    kennedy = ""
+    puente_aranda = ""
+    san_cristobal = ""
+    santa_fe = ""
 
     if arriendo_data > min_barrios_unidos and arriendo_data < max_barrios_unidos:
-        barrios_unidos = "Barrios unidos "
+        barrios_unidos = "Barrios_Unidos "
     if arriendo_data > min_suba and arriendo_data < max_suba:
         suba = "Suba "
     if arriendo_data > min_bosa and arriendo_data < max_bosa:
@@ -100,8 +120,18 @@ def operaciones():
         teusaquillo = "Teusaquillo "
     if arriendo_data > min_usaquen and arriendo_data < max_usaquen:
         usaquen = "Usaquen "
+    if arriendo_data > min_fontibon and arriendo_data < max_fontibon:
+        fontibon = "Fontibon "
+    if arriendo_data > min_kennedy and arriendo_data < max_kennedy:
+        kennedy = "Kennedy "
+    if arriendo_data > min_puente_aranda and arriendo_data < max_puente_aranda:
+        puente_aranda = "Puente_Aranda "
+    if arriendo_data > min_san_cristobal and arriendo_data < max_san_cristobal:
+        san_cristobal = "San_Cristobal "
+    if arriendo_data > min_santa_fe and arriendo_data < max_santa_fe:
+        santa_fe = "Santa_Fe "
 
-    localidad_text = barrios_unidos + suba + bosa + engativa + teusaquillo +  usaquen
+    localidad_text = barrios_unidos + suba + bosa + engativa + teusaquillo +  usaquen + fontibon + kennedy + puente_aranda + san_cristobal + santa_fe
 
     localidad_label = tk.Label(text = localidad_text)
     localidad_label.place(x = 22, y = 600)

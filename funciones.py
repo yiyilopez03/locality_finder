@@ -10,10 +10,14 @@ def transporte(answer_transporte, workdays, tm, precio_transporte):
         transport = tm_price
     return transport
 
+def precio (X):
+    price = (X.iloc[:, 2])
+    return price
+
 def completar (X):
     from sklearn.impute import SimpleImputer
     Xi = X.copy()
-    imputer_num = SimpleImputer(strategy = "median")
+    imputer_num = SimpleImputer(strategy = "mean")
     a = Xi.columns[np.sum(Xi.isna())> 0]
     imputer_num.fit(Xi[a])
     Xi[a] = imputer_num.transform(Xi[a])
