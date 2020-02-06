@@ -1,4 +1,3 @@
-#Lo utilizamos para hacer pruebas del código
 import numpy as np
 import pandas as pd
 from funciones import transporte, completar
