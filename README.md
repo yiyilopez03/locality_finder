@@ -1,4 +1,4 @@
-# Project-A
+# Locality Finder
  La idea es una aplicación que según los ingresos mensuales y gastos de una persona, en que localidad 
  de la ciudad (Bogotá) puede pagar un arriendo.
 
